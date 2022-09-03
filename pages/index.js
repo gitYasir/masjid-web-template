@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Body from "../Components/Body/Body";
 import NavBar from "../Components/NavBar/NavBar";
+import Footer from "../Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <NavBar />
       <Body />
+      <Footer />
     </>
   );
 }
