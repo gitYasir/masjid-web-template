@@ -5,12 +5,18 @@ function Body() {
   return (
     <div className={css.body}>
       <div className={css.timetableContainer}>
-        <Image
-          className={css.timetablePic}
-          src={"/prayer-timetable.jpg"}
-          alt={"Prayer Timetable"}
-          layout={"fill"}
-        />
+        <a
+          href="/prayer-timetable.jpg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            className={css.timetablePic}
+            src={"/prayer-timetable.jpg"}
+            alt={"Prayer Timetable"}
+            layout={"fill"}
+          />
+        </a>
       </div>
       <div className={css.info}>
         <Image
@@ -28,13 +34,13 @@ function Body() {
         </address>
         <div className={css.directionCallBtn}>
           <a
-            href="https://goo.gl/maps/r1nnDo8TFBpFJX9cA"
+            href="https://goo.gl/maps/TGHHDSLYDQL5RVVF7"
             target="_blank"
             rel="noreferrer"
           >
             <button>Directions</button>
           </a>
-          <a href="tel:11111">
+          <a href="tel:07971482049">
             <button>Call</button>
           </a>
         </div>
