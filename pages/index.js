@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Masjid Name</title>
+        <title>Ar-Rehman Trust & Masjid Usman</title>
         <meta name="description" content="Local Masjid" />
         <link rel="icon" href="/jama-masjid-svgrepo-com.svg" />
       </Head>
