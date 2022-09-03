@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Body from "../Components/Body/Body";
 import NavBar from "../Components/NavBar/NavBar";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <link rel="icon" href="/jama-masjid-svgrepo-com.svg" />
       </Head>
       <NavBar />
+      <Body />
     </>
   );
 }
