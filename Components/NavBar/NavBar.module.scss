@@ -10,4 +10,9 @@
   flex-direction: column;
   background-color: skyblue;
   color: white;
+  h1,
+  h2 {
+    padding: 0;
+    margin: 0.5rem;
+  }
 }

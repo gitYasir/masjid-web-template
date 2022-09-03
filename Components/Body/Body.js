@@ -14,18 +14,17 @@ function Body() {
       </div>
       <div className={css.info}>
         <Image
-          src={"/Green_Lane_Mosque_sym.jpg"}
+          src={"/masjid-entrance.jpg"}
           alt={"Masjid Picture"}
-          height={200}
-          width={150}
+          height={300}
+          width={250}
           className={css.masjidPic}
         />
         <address>
-          102 Masjid Rd
-          <br />
-          Masjidsville
-          <br />
-          MA5 9ID
+          513 Slade Rd
+          <br /> Stockland Green
+          <br /> Birmingham
+          <br /> B23 7JG
         </address>
         <div className={css.directionCallBtn}>
           <a
