@@ -1,0 +1,13 @@
+@mixin disFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  @include disFlex;
+  width: 100vw;
+  flex-direction: column;
+  background-color: skyblue;
+  color: white;
+}
