@@ -13,7 +13,7 @@
     height: 500px;
     width: 350px;
     .timetablePic {
-      border-radius: 10px;
+      border-radius: 5px;
     }
   }
   .info {
@@ -21,7 +21,7 @@
     flex-direction: column;
     margin: 1rem;
     .masjidPic {
-      border-radius: 10px;
+      border-radius: 5px;
     }
     address {
       margin: 1rem;
@@ -36,7 +36,7 @@
         background-color: rgb(174, 174, 174);
         margin: 3px;
         text-align: center;
-        border-radius: 20px;
+        border-radius: 10px;
         font-weight: 500;
         font-size: medium;
         &:hover {
