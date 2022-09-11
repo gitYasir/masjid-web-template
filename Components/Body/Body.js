@@ -1,9 +1,11 @@
 import css from "./Body.module.scss";
 import Image from "next/image";
+import Donate from "../Donate/Donate";
 
 function Body() {
   return (
     <div className={css.body}>
+      <Donate />
       <div className={css.timetableContainer}>
         <a
           href="/prayer-timetable.jpg"
