@@ -1,12 +1,10 @@
 import Image from "next/image";
 import css from "./Donate.module.scss";
 
-function Donate() {
+function Donate({ onClick }) {
   return (
-    <div className={css.donate}>
-      <a href="">
-        <Image src={"/Donate.png"} alt={"Donate"} height={75} width={125} />
-      </a>
+    <div className={css.donate} onClick={onClick}>
+      <Image src={"/Donate.png"} alt={"Donate"} height={75} width={125} />
     </div>
   );
 }

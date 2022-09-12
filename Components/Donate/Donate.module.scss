@@ -2,6 +2,9 @@
   position: fixed;
   top: 10rem;
   right: 4rem;
+  &:hover {
+    cursor: pointer;
+  }
   img {
     border-radius: 5px;
   }
