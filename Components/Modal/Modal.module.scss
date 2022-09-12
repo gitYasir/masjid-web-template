@@ -9,35 +9,7 @@
   height: 100vh;
   width: 100vw;
   position: fixed;
+  top: 0;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.904);
-  .modal {
-    @include disFlex;
-    background-color: white;
-    border-radius: 10px;
-    margin: 20px;
-    transition: all 0.2s linear;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
-    &:hover {
-      transform: scale(1.05);
-      transition: transform 500ms ease;
-    }
-    .picArea {
-      margin: 10px;
-      min-width: 100px;
-      min-height: 100px;
-      .pic {
-        border-radius: 10px;
-      }
-    }
-    .info {
-      p {
-        margin: 5px;
-        width: 250px;
-        height: fit-content;
-      }
-      @include disFlex;
-      width: 240px;
-      margin: 10px;
-    }
-  }
 }

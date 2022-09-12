@@ -6,7 +6,6 @@
 
 .body {
   @include disFlex;
-  margin: 1rem;
   .timetableContainer {
     position: relative;
     margin: 1rem;
@@ -45,10 +44,18 @@
       }
     }
   }
+  .donate {
+    position: fixed;
+    top: 10rem;
+    right: 4rem;
+  }
 }
 
-@media (max-width: 671px) {
+@media (max-width: 1054px) {
   .body {
     flex-direction: column;
+    .donate {
+      position: static;
+    }
   }
 }

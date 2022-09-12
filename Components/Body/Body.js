@@ -12,7 +12,7 @@ function Body() {
   return (
     <>
       <div className={css.body}>
-        <Donate onClick={changeModal} />
+        {modal && <Modal onClick={changeModal} />}
         <div className={css.timetableContainer}>
           <a
             href="/prayer-timetable.jpg"
@@ -54,7 +54,9 @@ function Body() {
             </a>
           </div>
         </div>
-        {modal && <Modal onClick={changeModal} />}
+        <div className={css.donate}>
+          <Donate onClick={changeModal} />
+        </div>
       </div>
     </>
   );
