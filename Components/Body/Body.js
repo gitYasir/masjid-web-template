@@ -18,6 +18,7 @@ function Body() {
             href="/prayer-timetable.jpg"
             target="_blank"
             rel="noopener noreferrer"
+            download
           >
             <Image
               className={css.timetablePic}
