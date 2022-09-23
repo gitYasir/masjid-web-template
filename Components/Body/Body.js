@@ -3,6 +3,7 @@ import Image from "next/image";
 import Donate from "../Donate/Donate";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
+import Madrasa from "../Madrasa/Madrasa";
 
 function Body() {
   const [modal, setModal] = useState(false);
@@ -36,12 +37,15 @@ function Body() {
             width={250}
             className={css.masjidPic}
           />
-          <address>
-            513 Slade Rd
-            <br /> Stockland Green
-            <br /> Birmingham
-            <br /> B23 7JG
-          </address>
+          <div className={css.madrasa}>
+            <Madrasa />
+            <address>
+              513 Slade Rd
+              <br /> Stockland Green
+              <br /> Birmingham
+              <br /> B23 7JG
+            </address>
+          </div>
           <div className={css.directionCallBtn}>
             <a
               href="https://goo.gl/maps/TGHHDSLYDQL5RVVF7"
