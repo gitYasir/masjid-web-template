@@ -16,3 +16,9 @@
     margin: 0.5rem;
   }
 }
+
+@media (max-width: 700px) {
+  .mainContainer {
+    width: 100%;
+  }
+}
