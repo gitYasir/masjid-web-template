@@ -6,13 +6,42 @@
 
 .body {
   @include disFlex;
-  .timetableContainer {
-    position: relative;
-    margin: 1rem;
-    height: 500px;
-    width: 350px;
-    .timetablePic {
+  .container {
+    @include disFlex;
+    flex-direction: column;
+    .timetableContainer {
+      position: relative;
+      margin: 1rem;
+      height: 500px;
+      width: 350px;
+      .timetablePic {
+        border-radius: 5px;
+      }
+    }
+    .download {
+      @include disFlex;
+      background-color: rgb(174, 174, 174);
+      padding: 0.5rem;
+      margin-bottom: 4rem;
       border-radius: 5px;
+      @media (max-width: 1054px) {
+        margin-bottom: 0;
+      }
+      &:hover {
+        background-color: gray;
+        cursor: pointer;
+      }
+      a {
+        all: unset;
+      }
+      .downloadIcon {
+        margin: 0 0.5rem 0 0;
+      }
+      label {
+        // @include disFlex;
+        // flex-direction: column;
+        cursor: pointer;
+      }
     }
   }
   .info {

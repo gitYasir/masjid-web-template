@@ -4,6 +4,8 @@ import Donate from "../Donate/Donate";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import Madrasa from "../Madrasa/Madrasa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 function Body() {
   const [modal, setModal] = useState(false);
@@ -14,20 +16,39 @@ function Body() {
     <>
       <div className={css.body}>
         {modal && <Modal onClick={changeModal} />}
-        <div className={css.timetableContainer}>
-          <a
-            href="/prayer-timetable.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            download
-          >
-            <Image
-              className={css.timetablePic}
-              src={"/prayer-timetable.jpg"}
-              alt={"Prayer Timetable"}
-              layout={"fill"}
-            />
-          </a>
+        <div className={css.container}>
+          <div className={css.timetableContainer}>
+            <a
+              href="/prayer-timetable.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                className={css.timetablePic}
+                src={"/prayer-timetable.jpg"}
+                alt={"Prayer Timetable"}
+                layout={"fill"}
+              />
+            </a>
+          </div>
+          <div className={css.download}>
+            <a
+              href="/prayer-timetable.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Prayer Timetable"
+              download
+            >
+              <div>
+                <FontAwesomeIcon
+                  icon={faDownload}
+                  style={{ width: "30px", height: "30px" }}
+                  className={css.downloadIcon}
+                />
+              </div>
+            </a>
+            <label>Download</label>
+          </div>
         </div>
         <div className={css.info}>
           <Image
