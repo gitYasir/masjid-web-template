@@ -31,14 +31,14 @@ function Body() {
               />
             </a>
           </div>
-          <div className={css.download}>
-            <a
-              href="/prayer-timetable.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Prayer Timetable"
-              download
-            >
+          <a
+            href="/prayer-timetable.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Prayer Timetable"
+            download
+          >
+            <div className={css.download}>
               <div>
                 <FontAwesomeIcon
                   icon={faDownload}
@@ -46,9 +46,9 @@ function Body() {
                   className={css.downloadIcon}
                 />
               </div>
-            </a>
-            <label>Download</label>
-          </div>
+              <label>Download</label>
+            </div>
+          </a>
         </div>
         <div className={css.info}>
           <Image
