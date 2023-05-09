@@ -1,0 +1,20 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .label {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .btn {
+    margin: 20px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+  }
+}
