@@ -33,7 +33,7 @@ function Upload() {
     if (data) {
       setFormError(null);
     }
-    // router.push("/");
+    router.push("/");
   };
   console.log(file);
   const handleFileSelected = (e) => {
