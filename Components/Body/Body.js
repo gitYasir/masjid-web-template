@@ -1,6 +1,5 @@
 import css from "./Body.module.scss";
 import Image from "next/image";
-import Donate from "../Donate/Donate";
 import { useState, useEffect } from "react";
 import Modal from "../Modal/Modal";
 import Madrasa from "../Madrasa/Madrasa";
@@ -48,11 +47,7 @@ function Body() {
         {modal && <Modal onClick={changeModal} />}
         <div className={css.container}>
           <div className={css.timetableContainer}>
-            <a
-              href="/prayer-timetable.jpg"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={imageURL} target="_blank" rel="noopener noreferrer">
               <Image
                 className={css.timetablePic}
                 src={imageURL}
@@ -64,7 +59,7 @@ function Body() {
             </a>
           </div>
           <a
-            href="/prayer-timetable.jpg"
+            href={imageURL}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Prayer Timetable"
@@ -92,28 +87,39 @@ function Body() {
           />
           <div className={css.madrasa}>
             <Madrasa />
-            <address>
-              513 Slade Rd
-              <br /> Stockland Green
-              <br /> Birmingham
-              <br /> B23 7JG
-            </address>
+            <div className={css.directionBtn}>
+              <address>
+                513 Slade Rd
+                <br /> Stockland Green
+                <br /> Birmingham
+                <br /> B23 7JG
+              </address>
+              <a
+                href="https://goo.gl/maps/TGHHDSLYDQL5RVVF7"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>Directions</button>
+              </a>
+            </div>
           </div>
           <div className={css.directionCallBtn}>
-            <a
-              href="https://goo.gl/maps/TGHHDSLYDQL5RVVF7"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button>Directions</button>
-            </a>
-            <a href="tel:07971482049">
-              <button>Call</button>
-            </a>
+            <div style={{ width: "100%" }}>
+              <h4 style={{ width: "100%", textAlign: "center" }}>Contact</h4>
+              <div>
+                <label style={{ paddingRight: "5px" }}>07790186669</label>
+                <a href="tel:07790186669">
+                  <button>Call</button>
+                </a>
+              </div>
+              <div style={{}}>
+                <label style={{ paddingRight: "5px" }}>07971482049</label>
+                <a href="tel:07971482049">
+                  <button>Call</button>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className={css.donate}>
-          <Donate onClick={changeModal} />
         </div>
       </div>
     </>
