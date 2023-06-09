@@ -1,19 +1,14 @@
 import css from "./Body.module.scss";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import Modal from "../Modal/Modal";
 import Madrasa from "../Madrasa/Madrasa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import supabase from "../../Config/supabaseConfig";
 
 function Body() {
-  const [modal, setModal] = useState(false);
-  const [fileName, setFileName] = useState("");
   const [imageURL, setImageURL] = useState("");
-  function changeModal() {
-    setModal(!modal);
-  }
+
   useEffect(() => {
     async function getName() {
       const x = await supabase.storage
@@ -37,14 +32,13 @@ function Body() {
     }
 
     getName();
-  }, [fileName]);
+  }, []);
   const imageLoader = ({ src, width, quality }) => {
     return `${src}`;
   };
   return (
     <>
       <div className={css.body}>
-        {modal && <Modal onClick={changeModal} />}
         <div className={css.container}>
           <div className={css.timetableContainer}>
             <a href={imageURL} target="_blank" rel="noopener noreferrer">
