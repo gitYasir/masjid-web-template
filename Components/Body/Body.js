@@ -99,7 +99,7 @@ function Body() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button>Directions</button>
+                <button className={css.directions}>Directions</button>
               </a>
             </div>
           </div>
@@ -108,13 +108,13 @@ function Body() {
               <div>
                 <label style={{ paddingRight: "5px" }}>07790186669</label>
                 <a href="tel:07790186669">
-                  <button>Contact</button>
+                  <button className={css.contact}>Contact</button>
                 </a>
               </div>
               <div style={{}}>
                 <label style={{ paddingRight: "5px" }}>07971482049</label>
                 <a href="tel:07971482049">
-                  <button>Contact</button>
+                  <button className={css.contact}>Contact</button>
                 </a>
               </div>
             </div>
