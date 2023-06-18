@@ -5,6 +5,7 @@ import Madrasa from "../Madrasa/Madrasa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import supabase from "../../Config/supabaseConfig";
+import Notice from "../Notice/Notice";
 
 function Body() {
   const [imageURL, setImageURL] = useState("");
@@ -71,14 +72,19 @@ function Body() {
             </div>
           </a>
         </div>
+
         <div className={css.info}>
-          <Image
-            src={"/masjid-entrance.jpg"}
-            alt={"Masjid Picture"}
-            height={300}
-            width={250}
-            className={css.masjidPic}
-          />
+          <div className={css.imageAndNotice}>
+            <div className={css.masjidPic}>
+              <Image
+                src={"/masjid-entrance.jpg"}
+                alt={"Masjid Picture"}
+                height={300}
+                width={250}
+              />
+            </div>
+            <Notice />
+          </div>
           <div className={css.madrasa}>
             <Madrasa />
             <div className={css.directionBtn}>
@@ -99,17 +105,16 @@ function Body() {
           </div>
           <div className={css.directionCallBtn}>
             <div style={{ width: "100%" }}>
-              <h4 style={{ width: "100%", textAlign: "center" }}>Contact</h4>
               <div>
                 <label style={{ paddingRight: "5px" }}>07790186669</label>
                 <a href="tel:07790186669">
-                  <button>Call</button>
+                  <button>Contact</button>
                 </a>
               </div>
               <div style={{}}>
                 <label style={{ paddingRight: "5px" }}>07971482049</label>
                 <a href="tel:07971482049">
-                  <button>Call</button>
+                  <button>Contact</button>
                 </a>
               </div>
             </div>

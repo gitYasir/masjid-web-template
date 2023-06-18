@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem;
+  margin-top: 0;
+  .sub {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 3px;
+    }
+    .notice {
+      background-color: rgb(146, 145, 145);
+      border-radius: 10px;
+      margin: 5px;
+      padding: 13px;
+      h4 {
+        margin: 0;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
