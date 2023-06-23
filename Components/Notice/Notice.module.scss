@@ -26,5 +26,14 @@
         text-align: center;
       }
     }
+    .eid {
+      position: relative;
+      height: 121px;
+      width: 210px;
+      border-radius: 10px;
+      .eidPic {
+        border-radius: 10px;
+      }
+    }
   }
 }

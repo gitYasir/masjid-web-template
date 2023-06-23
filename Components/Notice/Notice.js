@@ -1,3 +1,4 @@
+import Image from "next/image";
 import css from "./Notice.module.scss";
 
 function Notice() {
@@ -9,10 +10,13 @@ function Notice() {
           <h4>Darse Quran</h4>
           <p>Taking place every Friday after prayer</p>
         </div>
-        <div className={css.notice}>
-          <h4>Eid Adha</h4>
-          <p>Date: TBC</p>
-          <p>Timings: TBC</p>
+        <div className={css.eid}>
+          <Image
+            src={"/WhatsApp Image 2023-06-22 at 10.42.35 AM (1).jpeg"}
+            alt=""
+            layout="fill"
+            className={css.eidPic}
+          />
         </div>
       </div>
     </div>
