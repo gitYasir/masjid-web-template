@@ -8,7 +8,7 @@ function Notice() {
         <h2>Notice</h2>
         <div className={css.notice}>
           <h4>Darse Quran</h4>
-          <p>Taking place every Friday after prayer</p>
+          <p>Taking place every Friday after Maghrib prayer</p>
         </div>
         <div className={css.eid}>
           <Image
