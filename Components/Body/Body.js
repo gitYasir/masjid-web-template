@@ -5,7 +5,6 @@ import Madrasa from "../Madrasa/Madrasa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import supabase from "../../Config/supabaseConfig";
-import Notice from "../Notice/Notice";
 
 function Body() {
   const [imageURL, setImageURL] = useState("");
@@ -84,7 +83,6 @@ function Body() {
                 loading="lazy"
               />
             </div>
-            <Notice />
           </div>
           <div className={css.madrasa}>
             <Madrasa />
