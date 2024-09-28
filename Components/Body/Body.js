@@ -81,6 +81,7 @@ function Body() {
                 alt={"Masjid Picture"}
                 height={300}
                 width={250}
+                loading="lazy"
               />
             </div>
             <Notice />
